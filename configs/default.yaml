@@ -1,0 +1,22 @@
+model:
+  # 轻量视频理解：约 6GB FP16，远小于 Qwen3-VL-8B（~17GB）
+  modelscope_id: Qwen/Qwen2.5-VL-3B-Instruct
+  local_dir: /root/autodl-tmp/models/Qwen/Qwen2.5-VL-3B-Instruct
+  dtype: bfloat16
+  num_frames: 32
+  max_new_tokens: 2048
+  attn_implementation: sdpa
+
+paths:
+  root: /root/autodl-tmp/video-platform
+  raw_videos: /root/autodl-tmp/video-platform/data/raw_videos
+  scripts: /root/autodl-tmp/video-platform/data/scripts
+  urls: /root/autodl-tmp/video-platform/data/urls.txt
+
+download:
+  format: "bv*[height<=1080]+ba/b[height<=1080]/best"
+  cookies_file: ""
+
+dissect:
+  workers: 1
+  skip_existing: true

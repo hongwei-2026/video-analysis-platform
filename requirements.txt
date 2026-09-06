@@ -1,0 +1,26 @@
+# 依赖版本按云端 PyTorch 2.8+cu128 / Python 3.12 对齐
+# 安装请走国内镜像，见 scripts/remote_setup.sh
+
+modelscope>=1.25.0
+transformers>=4.57.0
+accelerate>=1.0.0
+qwen-vl-utils[decord]>=0.0.14
+av>=14.0.0
+decord>=0.6.0
+einops>=0.8.0
+pillow>=10.0.0
+opencv-python-headless>=4.10.0
+numpy>=1.26.0
+tqdm>=4.66.0
+pyyaml>=6.0
+fastapi>=0.115.0
+uvicorn>=0.32.0
+yt-dlp>=2025.1.0
+httpx>=0.27.0
+safetensors>=0.4.0
+sentencepiece>=0.2.0
+protobuf>=4.25.0
+peft>=0.12.0
+datasets>=2.20.0
+trl>=0.9.0
+requests>=2.32.0

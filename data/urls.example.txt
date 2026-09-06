@@ -1,0 +1,2 @@
+# 爆款短视频 URL 模板：复制为 urls.txt 后填入真实链接
+# https://www.bilibili.com/video/BVxxxxxxxx
